@@ -1,0 +1,18 @@
+<!-- weather.html -->
+{% extends "base.html" %}
+
+{% block title %}Weather Dashboard{% endblock %}
+
+{% block content %}
+    <div class="weather-card">
+        <h2>Current Weather</h2>
+        <div class="weather-info">
+            <p class="temperature">{{ weather.temperature }}°C</p>
+            <p class="condition">{{ weather.condition }}</p>
+            <div class="details">
+                <p>Humidity: {{ weather.humidity }}%</p>
+                <p>Wind Speed: {{ weather.wind_speed }} km/h</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
