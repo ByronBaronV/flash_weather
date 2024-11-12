@@ -10,7 +10,7 @@ weather_data = {
     'humidity': 45,
     'wind_speed': 15
 }
-#Lenni estuvo aquiiiii
+#Lenni estuvo perdoooon
 @app.route('/')
 def index():
     return render_template('weather.html',
